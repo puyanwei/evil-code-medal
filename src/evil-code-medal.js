@@ -5,14 +5,17 @@ function EvilCodeMedal(userTime, gold, silver, bronze) {
 }
 
 EvilCodeMedal.prototype.getMedal = function(userTime) {
-  if (userTime < this.gold) {
-    return "Gold";
+  switch (true) {
+    case userTime < this.gold:
+      return "Gold";
+      break;
+    case userTime < this.silver:
+      return "Silver";
+      break;
+    case userTime < this.bronze:
+      return "Bronze";
+      break;
+    default:
+      return "None";
   }
-  if (userTime < this.silver) {
-    return "Silver";
-  }
-  if (userTime < this.bronze) {
-    return "Bronze";
-  }
-  return "None";
 };
