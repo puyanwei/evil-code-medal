@@ -1,4 +1,4 @@
-# Evil Code medal
+# Evil Code Medal
 
 This is a Kata from https://www.codewars.com/kata/5915686ed2563aa6650000ab/train/javascript
 
