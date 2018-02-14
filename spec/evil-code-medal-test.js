@@ -27,6 +27,8 @@ describe("#evilCodeMedal", function() {
       expect(result).toEqual("Silver");
       var result = evilCodeMedal.getMedal("01:14:00");
       expect(result).toEqual("Bronze");
+      var result = evilCodeMedal.getMedal("01:30:00");
+      expect(result).toEqual("None");
     });
   });
 });

@@ -14,4 +14,5 @@ EvilCodeMedal.prototype.getMedal = function(userTime) {
   if (userTime < this.bronze) {
     return "Bronze";
   }
+  return "None";
 };
