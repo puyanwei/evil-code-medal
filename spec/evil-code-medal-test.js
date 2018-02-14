@@ -21,9 +21,12 @@ describe("#evilCodeMedal", function() {
         "00:45:00",
         "01:15:00"
       );
-      var result = evilCodeMedal.getMedal("00:29:00");
-      console.log(result);
+      var result = evilCodeMedal.getMedal("00:14:00");
+      expect(result).toEqual("Gold");
+      var result = evilCodeMedal.getMedal("00:44:00");
       expect(result).toEqual("Silver");
+      var result = evilCodeMedal.getMedal("01:14:00");
+      expect(result).toEqual("Bronze");
     });
   });
 });
